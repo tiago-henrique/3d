@@ -22,19 +22,19 @@ potencia_impressora_w = st.sidebar.number_input(
     help="Consumo médio durante a impressão (inclui hotend, mesa aquecida, eletrônica)."
 )
 tarifa_kwh = st.sidebar.number_input(
-    "Tarifa de energia (R$/kWh)", min_value=0.0, value=0.85, step=0.01, format="%.2f"
+    "Tarifa de energia (R$/kWh)", min_value=0.0, value=0.89, step=0.01, format="%.2f"
 )
 
 st.sidebar.subheader("Desgaste da impressora")
 valor_impressora = st.sidebar.number_input(
-    "Valor da impressora (R$)", min_value=0.0, value=2500.0, step=50.0
+    "Valor da impressora (R$)", min_value=0.0, value=5414.90, step=50.0
 )
 vida_util_horas = st.sidebar.number_input(
     "Vida útil estimada (horas)", min_value=1.0, value=8000.0, step=100.0,
     help="Tempo total de uso esperado antes de precisar trocar/aposentar a impressora."
 )
 custo_manutencao_hora = st.sidebar.number_input(
-    "Custo de manutenção (R$/hora de uso)", min_value=0.0, value=0.30, step=0.05, format="%.2f",
+    "Custo de manutenção (R$/hora de uso)", min_value=0.0, value=1.00, step=0.05, format="%.2f",
     help="Rateio de peças de reposição: bicos, correias, lubrificação, etc."
 )
 
