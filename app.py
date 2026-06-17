@@ -18,7 +18,7 @@ st.sidebar.header("⚙️ Parâmetros Gerais")
 
 st.sidebar.subheader("Energia")
 potencia_impressora_w = st.sidebar.number_input(
-    "Potência média da impressora (W)", min_value=0.0, value=150.0, step=10.0,
+    "Potência média da impressora (W)", min_value=0.0, value=350.0, step=10.0,
     help="Consumo médio durante a impressão (inclui hotend, mesa aquecida, eletrônica)."
 )
 tarifa_kwh = st.sidebar.number_input(
